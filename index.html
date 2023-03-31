@@ -12,34 +12,311 @@
         padding: 0%;
        }
        #navA{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
-        height: 300px;
-        display: flex
+        height: 100px;
+        display: flex;
+        background-color: #3D5AFE;
+        /* position: sticky;
+        top: 0; */
+        
            }
        #navA .logo {
         margin-top: 10px;
         margin-left: 10px;
           width: 100px;
           height: 70px;
-          border: 2px solid red;
+          /* border: 2px solid red; */
        }
        .logo img{
         /* margin-top: 10px; */
         width: 100px;
-        height: 80px;
-       }
-       .menu{
-        border: 2px solid red;
-        margin-top: 10px;
-        width: 70px;
         height: 70px;
        }
+       .menu{
+        /* border: 2px solid red; */
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+        color: aliceblue;
+       }
         #inp{
-            border: 2px solid blue;
-            width: 350px;
-            height: 28px;
+            /* border: 2px solid blue; */
+            width: 550px;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-radius: 10px;
         }
+        .rightnav{
+            /* border: 2px solid blue; */
+            display: flex;
+            width: 200px;
+            height: 60px;
+            margin-left: 450px;
+            justify-content: space-around;
+            
+            
+        }
+        .rightnav .left{
+            /* border: 2px solid red; */
+            display: flex;
+            width: 100px;
+        }
+        .rightnav .left img{
+            margin-top: 10px;
+            /* border: 2px solid red; */
+        }
+        .rightnav .left h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+        .rightnav .right{
+            /* border: 2px solid red; */
+            margin-left: 20px;
+            display: flex;
+        }
+        .rightnav .right img{
+              width: 30px;
+              height: 40px;
+              /* border: 2px solid red; */
+              margin-top: 10px;
+        }
+        .rightnav .right h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+
+        #navB{
+            width: 100%;
+            height: 50px;
+            /* border: 2px solid red; */
+            /* margin-top: 10px; */
+            display: flex;
+            background-color: #3D5AFE;
+            position: sticky;
+            top: 0;
+        }
+        #navB .left{
+            /* border: 2px solid blue; */
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+       #navB .left a{
+        text-decoration: none;
+        color: aliceblue;
+       }
+        #navB .right{
+            width: 30%;
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 130px;
+            
+        }
+        #navB .right a{
+        text-decoration: none;
+        color: aliceblue;
+       }
+       #navB .left > div > h4{
+        text-decoration: none;
+       }
+
+       #top{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 600px;
+        margin-top: 10px;
+        display: flex;
+       }
+       #top .left img{
+        /* border: 2px solid red; */
+        width: 600px;
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 580px;
+       }
+       #top .right{
+        /* border: 2px solid red; */
+        width: 800px;
+        margin-top: 10px;
+        margin-left: 15px;
+        height: 580px;
+       }
+       #top .right .top{
+        border: 2px solid #E0E0E0;
+        width: 780px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-around;
+
+       }
+       #top .right .bottom{
+        border: 2px solid #E0E0E0;
+        width: 780px;
+        height: 350px;
+        margin-top: 10px;
+        margin-left: 10px;
+         display: flex;
+         justify-content: space-between;
+       }
+       #top .right .top img{
+        width: 200px;
+        height: 120px;
+       }
+       #top .right .top > div{
+        width: 200px;
+        height: 200px;
+        /* border: 2px solid red; */
+       }
+       #top .right .bottom img{
+        width: 380px;
+        height: 350px;
+       }
+       #top .right .bottom > div{
+        width: 400px;
+        height: 350px;
+        /* border: 2px solid red; */
+       }
+       #btwn img{
+        margin-top: 25px;
+        width: 100%;
+        height: 160px;
+       }
+       #btwndown {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        height: 400px;
+        margin-top: 25px;
+       }
+       #btwndown img{
+        width: 480px;
+        height: 380px;
+       }
+       #btwndown > div{
+        border: 2px solid #E0E0E0;
+        height: 380px;
+        width: 480px;
+       }
+       #between{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+
+       }
+       #between img{
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+       }
+       h2{
+        margin-left: 20px;
+       }
+       #btwndownA {
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        height: 400px;
+        margin-top: 25px;
+       }
+       #btwndownA img{
+        width: 480px;
+        height: 380px;
+       }
+       #btwndownA > div{
+        border: 2px solid #E0E0E0;
+        height: 380px;
+        width: 480px;
+       }
+       #btwndownB{
+        width: 100%;
+        margin-top: 150px;
+        height: 150px;
+        /* border: 2px solid red; */
+       }
+       #btwndownB img{
+        width: 100%;
+        height: 150px;
+       }
+
+       #betweenB{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+
+
+       }
+       #betweenB img{
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+       }
+       #headingName2G{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border: 2px solid red; */
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 30px;
+            height: 380px;
+            background-color:#424242;
+        }
+        #headingName2G > #container1{
+            margin-left: 35px;
+            /* border: 2px solid blue; */
+        }
+        #headingName2G > #container1 > ul > li > a{
+            text-decoration: none;
+            color: white;
+        }
+        #headingName2G > #container1 > h3{
+            margin-left: 20px;
+            color: white;
+        }
+        #headingName2H{
+            /* border: 2px solid red; */
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 5px;
+            height: 100px;
+            display: flex;
+            
+            background-color:gray;
+        }
+        #headingName2H > #right{
+            display: flex;
+            width: 750px;
+            justify-content: space-around;
+            /* border: 2px solid red; */
+            margin-left: 240px;
+        }
+        #headingName2H > #left{
+            margin-top: 20px;
+            /* border: 2px solid red; */
+            margin-left: 30px;
+        }
+        #headingName2H > #right > div{
+            margin-top: 20px;
+            /* border: 2px solid red; */
+        }
+
+      
    </style>
 <body>
     
@@ -48,7 +325,7 @@
               <img src="images/LOGO..PRoject(1).png"/>
         </div>
         <div class="menu">
-           <h3>MENU</h3>
+           <h2>MENU</h2>
         </div>
         <div>
             <input type="text" placeholder="What can we help you find today?" id="inp"/>
@@ -57,22 +334,221 @@
         <div class="rightnav">
             <div class="left">
                  <div>
-
+                     <img src="https://img.icons8.com/windows/1x/usps.png"/>
                  </div>
                  <div>
-
+                    <h2>Aiea</h2>
                  </div>
             </div>
             <div class="right">
                 <div>
-
+                    <img src="https://png.pngitem.com/pimgs/s/248-2488288_transparent-shopping-centre-clipart-transparent-background-shopping-cart.png"/>
                 </div>
                 <div>
-
+                    <h2>Cart</h2>
                 </div>
             </div>
         </div>
     </div>
+           <div id="navB">
+               <div class="left">
+                <div><a href="">Top Deals</a></div>
+                <div><a href="">Deal of the Day</a></div>
+                <div><a href="">TotalTech Membership</a></div>
+                <div><a href="">Credit Card</a></div>
+                <div><a href="">Gift Cards</a></div>
+                <div><a href="">Gift Ideas</a></div>
+                <div><a href="">Health & Wellness</a></div>
+                <div><a href="">More</a></div>
+               </div>
+               <div class="right">
+                <div><a href="">Account</a></div>
+                <div><a href="">Recently Viewed</a></div>
+                <div><a href="">Order Status</a></div>
+                <div><a href="">Saved Item</a></div>
+               </div>
+           </div>
 
+            <div id="top">
+                <div class="left">
+                   <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/ghp-MMT-669182-tv-16c7b1f5-f700-4469-bcf6-821e568b4e3f.jpg;maxHeight=1456;maxWidth=1456"/>
+                </div>
+                <div class="right">
+                     <div class="top">
+                        <div>
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                           <p>HP - 15.6" Touch-Screen Laptop - Intel Core i3 - 8GB</p>
+                        </div>
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                            <p>HP - 15.6" Touch-Screen Laptop - Intel Core i3 - 8GB</p>
+                        </div>
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                            <p>HP - 17.3" Laptop - AMD Ryzen 5 - 8GB Memory - 512GB SSD</p>
+                        </div>
+                       
+                     </div>
+                     <div class="bottom">
+                        <div>
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpCbtd8XfrkybJJPZr4SWKtlZ5YazDOTi-h83NvfbLQ&usqp=CAU&ec=48600113"/>
+                        </div>
+                        <div>
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>  
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div id="btwn">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP6A2QjCQNV-PwowodN7Hx5G2rutk2zuCJQAEnRgiF2w&usqp=CAU&ec=48600113"/>
+            </div>
+
+            <div id="btwndown">
+                <div>
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/ghp-MMT-659787-macbook-f3e75956-d989-49c7-96b5-45eb5d4e73f5.jpg;maxHeight=960;maxWidth=960"/>
+                </div>
+                <div>
+                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-81923-ghp-outlet-event-230327-ee02506d-46a7-4aa8-8de7-27dac40af6a2.png;maxHeight=960;maxWidth=960"/>
+                </div>
+                <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-EVN-205712-upgrade-plus-b513dde8-d003-432d-b792-8b4eb9903e0d.jpg;maxHeight=960;maxWidth=960"/>
+                </div>
+            </div>
+            <h2><b>Deals inspired by your shopping</b>(6 items)</h2>
+            <div id="between">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                    <p>HP - 15.6" Touch-Screen Laptop - Intel Core i3 - 8GB</p>
+                    <p>$419.99</p>
+                 </div>
+                 <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                     <p>HP - 15.6" Touch-Screen Laptop - Intel Core i3 - 8GB</p>
+                     <p>$419.99</p>
+                 </div>
+                 <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9928/9928441_sd.jpg;maxHeight=272;maxWidth=400"/>
+                    <p>Logitech - M510 Wireless Optical<br> Ambidextrous Mouse - Silver/Black</p>
+                    <p>$199.99</p>
+                 </div>
+                 <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6481/6481444_sd.jpg;maxHeight=272;maxWidth=400"/>
+                    <p>Logitech - M220 SILENT Wireless Optical Ambidextrous Mouse - Rose</p> 
+                    <p>$219.99</p>
+                </div>
+                 <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                     <p>HP - 17.3" Laptop - AMD Ryzen 5 - 8GB Memory - 512GB SSD</p>
+                     <p>$499.99</p>
+                 </div>
+            </div>
+            <h2><b>Our featured offers</b></h2>
+
+            <div id="btwndownA">
+                <div>
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-663686_der-9227c1a1-0c08-4e58-b5f3-fb32fdcb93d5.jpg;maxHeight=504;maxWidth=740"/>
+                  <h2><b>Save on select Nintendo Switch digital games.
+                </b></h2>
+                <p>Assortment includes Super Mario Odyssey, Super Mario 3D World + Bowser's Fury, Mario Kart 8 Deluxe Bundle and other Mario titles</p>
+                </div>
+                <div>
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-665820_DER-87a2497b-38b8-45a5-b746-0bb83bc7ee42.jpg;maxHeight=504;maxWidth=740"/>
+                   <h2><b>Spring Appliance Savings Event.</b></h2>
+                   <p>Upgrade your space and get fast fulfillment on select major appliances.</p>
+                </div>
+                <div>
+                   <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-MMT-665886-WorldBackupDay_DER-7d529846-d742-4c63-b7ac-89d1b2f02cb9.jpg;maxHeight=504;maxWidth=740"/>
+                   <h2><b>Save on select storage and protect your data on World Backup Day.</b></h2>
+                </div>
+            </div>
+                
+            <div id="btwndownB">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP62brRxwqTASfkgrkPd_dc0cxGEdhOYT7YuTxjoR3Xw&usqp=CAU&ec=48600113"/>
+            </div>
+            <h2><b>You may also like</b> (6 items)</h2>
+
+            <div id="betweenB">
+                <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502263_sd.jpg;maxHeight=272;maxWidth=400"/>
+                    <p>HP - Pavilion - 2-in-1 14" FHD Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Space</p>
+                    <p>$419.99</p>
+                 </div>
+                 <div>
+                     <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6503/6503849_sd.jpg;maxHeight=272;maxWidth=400"/>
+                     <p>HP - 15.6" Touch-Screen Laptop - Intel Core i3 - 8GB</p>
+                     <p>$419.99</p>
+                 </div>
+                 <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9928/9928441_sd.jpg;maxHeight=272;maxWidth=400"/>
+                    <p>Logitech - M510 Wireless Optical<br> Ambidextrous Mouse - Silver/Black</p>
+                    <p>$199.99</p>
+                 </div>
+                 <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502263_sd.jpg;maxHeight=272;maxWidth=400"/>
+                    <p>Logitech - M220 SILENT Wireless Optical Ambidextrous Mouse - Rose</p> 
+                    <p>$219.99</p>
+                </div>
+                 <div>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBiwkPrmusFdykVsox-E5SuOIYponWg6eoWak55aVjpdRFzJvrPpH-4BWoIF4vlf0DHirAxWpBGQ&usqp=CAU&ec=48600113"/>
+                     <p>HP - 17.3" Laptop - AMD Ryzen 5 - 8GB Memory - 512GB SSD</p>
+                     <p>$499.99</p>
+                 </div>
+            </div>
+
+            <footer id="headingName2G">
+                <div id="container1">
+                      <h3>MY ACCOUNT</h3>
+                        <ul>
+                            <li><a href="#">Orders&Returns</a></li><br>
+                            <li><a href="#">Email Performance</a></li><br>
+                            <li><a href="#">Account Setting</a></li><br>
+                        </ul>
+                </div>
+                 <div id="container1">
+                     <h3>LET US HELP</h3>
+                      <ul>
+                         <li><a href="#">Contact Customer Care</a></li><br>
+                         <li><a href="#">Shipping Information</a></li><br>
+                         <li><a href="#">Return Policy</a></li><br>
+                         <li><a href="#">Internation Help</a></li><br>
+                         <li><a href="#">Accessibility</a></li><br>
+                      </ul>
+                 </div>
+                 <div id="container1">
+                    <h3>COMPANY INFORMATION</h3>
+                     <ul>
+                        <li><a href="#">About OverStock</a></li><br>
+                        <li><a href="#">Contact Us</a></li><br>
+                        <li><a href="#">Carrers</a></li><br>
+                        <li><a href="#">Investor Relations</a></li><br>
+                        <li><a href="#">Sell Your Product</a></li><br>
+                        <li><a href="#">Supply Chain Transparency</a></li><br>
+                     </ul>
+                </div>
+                <div id="container1">
+                    <h3>MORE WAYS TO SHOP</h3>
+                     <ul>
+                        <li><a href="#">Tips & Ideas</a></li><br>
+                        <li><a href="#">Deals</a></li><br>
+                        <li><a href="#">Clearence</a></li><br>
+                        <li><a href="#">New Arrivals</a></li><br>
+                     </ul>
+                </div>
+            </footer>
+            <footer id="headingName2H">
+                  <div id="left">
+                     <h3>© Copyright 2023, Overstock.com®, Inc.<br>
+                        799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</h3>
+                  </div>
+                  <div id="right">
+                      <div><h3>Privacy Policy</h3></div>
+                      <div><h3>Term & Condition</h3></div>
+                      <div><h3>*Promotion Term</h3></div>
+                      <div><h3>Ship To:</h3></div>
+                  </div>
+    
+            </footer>
+             
 </body>
 </html>
