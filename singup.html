@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <style>
+        .signup-form {
+	width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+.signup-form h2 {
+	text-align: center;
+}
+
+.signup-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.signup-form label {
+	margin-top: 10px;
+}
+
+.signup-form input {
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.signup-form button {
+	padding: 10px;
+	background-color: #008CBA;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.signup-form button:hover {
+	background-color: #006080;
+}
+   #di{
+    margin-top: 10px;
+    text-align: center;
+   }
+ a{
+   
+    text-decoration: none;
+ }
+
+     </style>
+<body>
+    
+    <div class="signup-form">
+		<h2>Create an Account</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+            <label for="password">Confirm Password:</label>
+			<input type="password" id="confirmPassword" name="password" required>
+			<button id="submit">Sign Up</button>
+            <div id="di"><a href="./login.html">LOGIN </a></div>
+            
+		</form>
+	</div>
+     
+</body>
+
+   <script>
+       
+        let form = document.querySelector("form");
+        let Name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let password  = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirmPassword");
+        let submit = document.getElementById("submit");
+        
+
+        let userData = JSON.parse(localStorage.getItem("userData")) || []
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            let userobj={
+                Name:Name.value,
+                Email:email.value,
+                Password:confirmPassword.value,
+            }
+
+            if(Name.value=="" || email.value == ""||password.value == ""|| confirmPassword.value==""){
+                alert("Please fill all details")
+            }
+            else if(password.value !== confirmPassword.value){
+                alert("Confirm Password Not Matched");
+            }
+
+            if((checkin(userData)==true)){
+                alert("Already Have Account");
+            }
+
+            else{
+                userData.push(userobj);
+                localStorage.setItem("userData",JSON.stringify(userData));
+                alert("Account Created");
+            }
+        })
+
+        function checkin(userData){
+            for(let i=0;i<userData.length;i++){
+                if(email.value === userData[i].Email){
+                    return true
+                }
+            }
+            return false
+        }
+
+      
+   </script>
+</html>
