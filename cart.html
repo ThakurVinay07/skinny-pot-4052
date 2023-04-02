@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+      #nav{
+         width: 100%;
+         height: 60px;
+         /* border: 2px solid red; */
+         display: flex;
+         justify-content: space-around;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+         /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+         
+       }
+       /* #nav .text{
+        margin-left: 100px;
+        
+       } */
+       #nav a{
+        text-decoration: none;
+        
+       }
+       .fill{
+        display: flex;
+        /* border: 2px solid red; */
+        width: 500px;
+        margin-left: 20px;
+        justify-content: space-around;
+        margin-top: 20px;
+       }
+       .fill a{
+           color:brown;
+       }
+       #ho:hover{
+         color:#4E342E;
+       }
+
+       #container{
+            display: grid;
+            grid-template-columns: repeat(3,280px);
+            gap: 40px;
+            margin-left: 300px;
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 290px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #container>div>img{
+            width: 290px;
+            height: 400px;
+        }
+        #container>div>h2{
+            display: inline;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #container>div>button{
+            width: 290px;
+            height: 40px;
+            background-color:cornflowerblue;
+            border: none;
+            font-size: larger;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+
+        body{
+        margin: 0%;
+        padding: 0%;
+       }
+       .menu a{
+        color: aliceblue;
+        text-decoration: none;
+       }
+       #navA{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 100px;
+        display: flex;
+        background-color: #3D5AFE;
+        position: sticky;
+        top: 0;
+        
+           }
+       #navA .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+          width: 100px;
+          height: 70px;
+          /* border: 2px solid red; */
+       }
+       .logo img{
+        /* margin-top: 10px; */
+        width: 100px;
+        height: 70px;
+       }
+       .menu{
+        /* border: 2px solid red; */
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+        color: aliceblue;
+       }
+        #inp{
+            /* border: 2px solid blue; */
+            width: 550px;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        .rightnav{
+            /* border: 2px solid blue; */
+            display: flex;
+            width: 200px;
+            height: 60px;
+            margin-left: 450px;
+            justify-content: space-around;
+            
+            
+        }
+        .rightnav .left{
+            /* border: 2px solid red; */
+            display: flex;
+            width: 100px;
+        }
+        .rightnav .left img{
+            margin-top: 10px;
+            /* border: 2px solid red; */
+        }
+        .rightnav .left h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+        .rightnav .right{
+            /* border: 2px solid red; */
+            margin-left: 20px;
+            display: flex;
+        }
+        .rightnav .right img{
+              width: 30px;
+              height: 40px;
+              /* border: 2px solid red; */
+              margin-top: 10px;
+        }
+        .rightnav .right h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+       #nav{
+         width: 100%;
+         height: 60px;
+         /* border: 2px solid red; */
+         display: flex;
+         justify-content: space-around;
+         /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+         
+       }
+       /* #nav .text{
+        margin-left: 100px;
+        
+       } */
+       #nav a{
+        text-decoration: none;
+       }
+ </style>
+<body>
+
+  <div id="navA">
+    <div class="logo">
+          <img src="images/LOGO..PRoject(1).png"/>
+    </div>
+    <div class="menu">
+       <h2><a href="./product.html" id="ho">MENU</a></h2>
+    </div>
+    <div>
+        <input type="text" placeholder="What can we help you find today?" id="inp"/>
+
+    </div>
+    <div class="rightnav">
+        <div class="left">
+             <div>
+                 <img src="https://img.icons8.com/windows/1x/usps.png"/>
+             </div>
+             <div>
+                <h2>Aiea</h2>
+             </div>
+        </div>
+        <div class="right">
+            <div>
+                <img src="https://png.pngitem.com/pimgs/s/248-2488288_transparent-shopping-centre-clipart-transparent-background-shopping-cart.png"/>
+            </div>
+            <div>
+                <h2><a href="./cart.html" id="ho">Cart</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div id="nav">
+        <div class="text">
+            <a href="./index.html" id="ho"><h2><b>WELCOME TO  BEST  BUY</b></h2></a>
+        </div>
+        <div class="fill">
+            <div>
+                <a href="" id="ho"><b>CART ITEM'S</b></a>
+            </div>
+              
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
+
+</body>
+  <script>
+    let container = document.getElementById("container");
+    let cartData = JSON.parse(localStorage.getItem("item")) || [];
+    function displayData() {
+      container.innerHTML = "";
+      cartData.forEach(function (product, index) {
+        let card = document.createElement("div");
+        let img = document.createElement("img");
+        let name = document.createElement("h2");
+        
+        let price = document.createElement("h3");
+        let remove = document.createElement("button");
+        let increment = document.createElement("button");
+        let decrement = document.createElement("button");
+        
+        img.src = product.img;
+        name.innerText = product.name;
+        price.innerText = product.price;
+        
+        remove.innerText = "Remove";
+        increment.innerText = "+";
+        decrement.innerText = "-";
+        
+
+        remove.addEventListener("click", function () {
+          
+          cartData = cartData.filter(function(ele){
+            return ele.id!==product.id
+          });
+          localStorage.setItem("cart2", JSON.stringify(cartData));
+          displayData();
+        });
+
+        increment.addEventListener("click", function () {
+          product.quantity++;
+          localStorage.setItem("cart2", JSON.stringify(cartData));
+          displayData();
+        });
+
+        decrement.addEventListener("click", function () {
+          if (product.quantity > 1) {
+            product.quantity--;
+            localStorage.setItem("cart2", JSON.stringify(cartData));
+            displayData();
+          }
+        });
+
+        card.append(
+          img,
+          name,
+          price,
+          increment,
+          decrement,
+          remove
+        );
+        container.append(card);
+      });
+
+    //   let total = document.getElementById("cart-total");
+
+    //   let sum = 0;
+    //   for (let i = 0; i < cartData.length; i++) {
+    //     sum += cartData[i].quantity * cartData[i].price;
+    //   }
+    //   total.innerText = sum;
+    }
+
+    displayData();
+  
+  </script>
+</html>

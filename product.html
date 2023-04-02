@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+       }
+       .menu a{
+        color: aliceblue;
+        text-decoration: none;
+       }
+       #navA{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 100px;
+        display: flex;
+        background-color: #3D5AFE;
+        position: sticky;
+        top: 0;
+        
+           }
+       #navA .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+          width: 100px;
+          height: 70px;
+          /* border: 2px solid red; */
+       }
+       .logo img{
+        /* margin-top: 10px; */
+        width: 100px;
+        height: 70px;
+       }
+       .menu{
+        /* border: 2px solid red; */
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+        color: aliceblue;
+       }
+        #inp{
+            /* border: 2px solid blue; */
+            width: 550px;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+        .rightnav{
+            /* border: 2px solid blue; */
+            display: flex;
+            width: 200px;
+            height: 60px;
+            margin-left: 450px;
+            justify-content: space-around;
+            
+            
+        }
+        .rightnav .left{
+            /* border: 2px solid red; */
+            display: flex;
+            width: 100px;
+        }
+        .rightnav .left img{
+            margin-top: 10px;
+            /* border: 2px solid red; */
+        }
+        .rightnav .left h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+        .rightnav .right{
+            /* border: 2px solid red; */
+            margin-left: 20px;
+            display: flex;
+        }
+        .rightnav .right img{
+              width: 30px;
+              height: 40px;
+              /* border: 2px solid red; */
+              margin-top: 10px;
+        }
+        .rightnav .right h2{
+            margin-left: 15px;
+            /* border: 2px solid red; */
+            color: aliceblue;
+        }
+       #nav{
+         width: 100%;
+         height: 60px;
+         /* border: 2px solid red; */
+         display: flex;
+         justify-content: space-around;
+         /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+         
+       }
+       /* #nav .text{
+        margin-left: 100px;
+        
+       } */
+       #nav a{
+        text-decoration: none;
+       }
+       .fill{
+        display: flex;
+        /* border: 2px solid red; */
+        width: 500px;
+        margin-left: 20px;
+        justify-content: space-around;
+        margin-top: 20px;
+       }
+       .fill a{
+           color:brown;
+       }
+       #ho:hover{
+         color:#4E342E;
+       }
+
+       #container{
+            display: grid;
+            grid-template-columns: repeat(3,280px);
+            gap: 40px;
+            margin-left: 300px;
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 290px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #container>div>img{
+            width: 290px;
+            height: 400px;
+        }
+        #container>div>h2{
+            display: inline;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #container>div>button{
+            width: 290px;
+            height: 40px;
+            background-color:cornflowerblue;
+            border: none;
+            font-size: larger;
+            border-radius: 3px;
+        }
+        #headingName2G{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border: 2px solid red; */
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 30px;
+            height: 380px;
+            background-color:#424242;
+        }
+        #headingName2G > #container1{
+            margin-left: 35px;
+            /* border: 2px solid blue; */
+        }
+        #headingName2G > #container1 > ul > li > a{
+            text-decoration: none;
+            color: white;
+        }
+        #headingName2G > #container1 > h3{
+            margin-left: 20px;
+            color: white;
+        }
+        #headingName2H{
+            /* border: 2px solid red; */
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 5px;
+            height: 100px;
+            display: flex;
+            
+            background-color:gray;
+        }
+        #headingName2H > #right{
+            display: flex;
+            width: 750px;
+            justify-content: space-around;
+            /* border: 2px solid red; */
+            margin-left: 240px;
+        }
+        #headingName2H > #left{
+            margin-top: 20px;
+            /* border: 2px solid red; */
+            margin-left: 30px;
+        }
+        #headingName2H > #right > div{
+            margin-top: 20px;
+            /* border: 2px solid red; */
+        }
+        #filter{
+            width: 150px;
+            height: 20px;
+        }
+        .right a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+   </style>
+<body>
+    <div id="navA">
+        <div class="logo">
+              <img src="images/LOGO..PRoject(1).png"/>
+        </div>
+        <div class="menu">
+           <h2><a href="./product.html" id="ho">MENU</a></h2>
+        </div>
+        <div>
+            <input type="text" placeholder="What can we help you find today?" id="inp"/>
+
+        </div>
+        <div class="rightnav">
+            <div class="left">
+                 <div>
+                     <img src="https://img.icons8.com/windows/1x/usps.png"/>
+                 </div>
+                 <div>
+                    <h2>Aiea</h2>
+                 </div>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://png.pngitem.com/pimgs/s/248-2488288_transparent-shopping-centre-clipart-transparent-background-shopping-cart.png"/>
+                </div>
+                <div>
+                    <h2><a href="./cart.html" id="ho">Cart</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="nav">
+        <div class="text">
+            <a href="./index.html" id="ho"><h2><b>WELCOME TO  BEST  BUY</b></h2></a>
+        </div>
+        <div class="fill">
+            <div>
+                <select id="filter">
+                    <option value="">Select Product</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Phone">Phone</option>
+                </select>
+            </div>
+              <div>
+                  <a href="">LAPTOP'S</a>
+              </div>
+              <div>
+                <a href="">PHONE'S</a>
+              </div>
+              <div>
+                <a href="./index.html">HOME</a>
+              </div>
+              <div>
+                  <a href="./cart.html">CART</a>
+              </div>
+        </div>
+    </div>
+    
+        <div id="container">
+
+        </div>
+
+        <footer id="headingName2G">
+            <div id="container1">
+                  <h3>MY ACCOUNT</h3>
+                    <ul>
+                        <li><a href="#">Orders&Returns</a></li><br>
+                        <li><a href="#">Email Performance</a></li><br>
+                        <li><a href="#">Account Setting</a></li><br>
+                    </ul>
+            </div>
+             <div id="container1">
+                 <h3>LET US HELP</h3>
+                  <ul>
+                     <li><a href="#">Contact Customer Care</a></li><br>
+                     <li><a href="#">Shipping Information</a></li><br>
+                     <li><a href="#">Return Policy</a></li><br>
+                     <li><a href="#">Internation Help</a></li><br>
+                     <li><a href="#">Accessibility</a></li><br>
+                  </ul>
+             </div>
+             <div id="container1">
+                <h3>COMPANY INFORMATION</h3>
+                 <ul>
+                    <li><a href="#">About OverStock</a></li><br>
+                    <li><a href="#">Contact Us</a></li><br>
+                    <li><a href="#">Carrers</a></li><br>
+                    <li><a href="#">Investor Relations</a></li><br>
+                    <li><a href="#">Sell Your Product</a></li><br>
+                    <li><a href="#">Supply Chain Transparency</a></li><br>
+                 </ul>
+            </div>
+            <div id="container1">
+                <h3>MORE WAYS TO SHOP</h3>
+                 <ul>
+                    <li><a href="#">Tips & Ideas</a></li><br>
+                    <li><a href="#">Deals</a></li><br>
+                    <li><a href="#">Clearence</a></li><br>
+                    <li><a href="#">New Arrivals</a></li><br>
+                 </ul>
+            </div>
+        </footer>
+        <footer id="headingName2H">
+              <div id="left">
+                 <h3>© Copyright 2023, Overstock.com®, Inc.<br>
+                    799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446</h3>
+              </div>
+              <div id="right">
+                  <div><h3>Privacy Policy</h3></div>
+                  <div><h3>Term & Condition</h3></div>
+                  <div><h3>*Promotion Term</h3></div>
+                  <div><h3>Ship To:</h3></div>
+              </div>
+
+        </footer>
+
+
+</body>
+ <script>
+            //   let data
+            //    async function fetchdata(){
+            //     try{
+            //         let res = await fetch("https://mocki.io/v1/b6b67eaf-9449-4304-aba4-30cef65a45d2");
+            //         res = await res.json();
+            //         // let data = res.data[0].vouchers
+            //         // display(data);
+            //         console.log(res);
+            //     }
+            //     catch(err){
+            //         console.log("error",err);
+            //     }
+            //    }
+
+            //    fetchdata();
+                            
+
+            const Product = [
+        {
+            img:"https://gumlet.assettype.com/newslaundry%2F2022-10%2Ff87bd79e-1d7a-4555-a88f-31dc10ed7ae0%2FImage_5.jpg?auto=format%2Ccompress&w=1200",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:1,
+            
+        },
+        {
+            img:"https://www.lenovo.com/medias/lenovo-laptops-thinkbook-16-gen-4-intel-hero.png?context=bWFzdGVyfHJvb3R8MzQ1OTM2fGltYWdlL3BuZ3xoMjEvaGZkLzEzMjU1MTI1OTkxNDU0LnBuZ3xlMGJjMDAyZjIzYzczYmY0YTY3NTlmODcwMDJjZTBhMzg5M2VlMjFlNTNlZWJkZDMyNDA3MTdlNjc3NjhhZWY5",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:2,
+        },
+        {
+            img:"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71geVdy6-OS._SX679_.jpg",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:3,
+        },
+        {
+           
+            img:"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/8131alIrTsL._AC_UL400_.jpg",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:4,
+        },
+        {
+           
+            img:"https://i.gadgets360cdn.com/products/large/moto-db-709x800-1652441656.jpg",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:5,
+        },
+        {
+            
+            img:"https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/14-3420/media-gallery/peripherals_laptop_latitude_3420nt_gallery_1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3319&hei=2405&qlt=100,1&resMode=sharp2&size=3319,2405&chrss=full&imwidth=5000",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:6,
+        },
+        {
+            
+            img:"https://micromaxinfo.com/pub/media/catalog/product/cache/a2910b080eca5b97079773d00477689e/i/n/in2bthumbnil.png",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:7,
+        },
+        {
+            
+            img:"https://images.tv9hindi.com/wp-content/uploads/2022/06/Laptop-Video-editing.jpg",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:8,
+        },
+        {
+           
+            img:"https://i.gadgets360cdn.com/products/large/redmi-note-11-pro-plus-5g-665x800-1646810144.jpg",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:9,
+        },
+        {
+           
+            img:"https://www.reliancedigital.in/medias/HP15s-EQ2144AU-Laptop-492575360-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNTc4ODh8aW1hZ2UvanBlZ3xpbWFnZXMvaDI4L2g1Ny85ODIyNTYwOTc2OTI2LmpwZ3xjYzY4NmJiNDkyZmQzYzk4MzQ3NDY1YWRkN2FmNzcwYmMyMGFlNjBjNzY5MDQ0YzFhNzIxNjQyMTdkMWUyMzRm",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:10,
+        },
+        {
+            
+            img:"https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81UT07JsBqL._AC._SR360,460.jpg",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:11,
+        },
+        {
+            
+            img:"https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWUphA?ver=e7f7",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:12,
+        },
+        {
+            img:"https://media.4rgos.it/s/Argos/9520055_R_SET?$Main768$&w=620&h=620",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:13,
+        },
+        {
+            
+            img:"https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8&w=1000&q=80",
+            name:"Laptop",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:14,
+        },
+        {
+            
+            img:"https://www.reliancedigital.in/medias/Motorola-G62-Mobile-Phone-493177199-i-4-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2MzA5MXxpbWFnZS9qcGVnfGltYWdlcy9oNDUvaDYzLzk4NzMyNjg1MDY2NTQuanBnfDNiNTllMjIxODY4MjAwYjU0MGFjN2VkZWM2Zjg3ZWQ3MzMyZTIxODYxNGIwN2I1NzdhZGMwNDkxNmMwNmE4M2E",
+            name:"Phone",
+            price:"Rs 2500",
+            productID:"HP - 15.6 Touch-Screen Laptop - Intel Core i5 - 8GB",
+            id:15,
+        }
+    ]
+    // let LSall = JSON.parse(localStorage.getItem("item")) || []; 
+
+       let LSall = localStorage.getItem("item");
+         if(LSall === null){
+            LSall = [];
+         }
+         else{
+            LSall = JSON.parse(LSall);
+         }
+
+
+    let container=document.getElementById("container");
+    const filter = document.querySelector("#filter");
+
+    filter.addEventListener("change", function () {
+        if (filter.value === "") {
+            Display(Product);
+        } else {
+            let filtered = Product.filter(function (element) {
+                if (element.name == filter.value) {
+                    return true;
+                } else {
+                    return false;
+                }
+            })
+            Display(filtered);
+        }
+    })
+   
+       Display(Product);
+
+       function Display(data){
+        container.innerHTML="";
+    for(let i=0;i<data.length;i++){
+        const pro = document.createElement("div");
+        
+        const image=document.createElement("img");
+        image.setAttribute("src",data[i].img);
+
+        
+
+        const name =document.createElement("p");
+        name.innerText=data[i].name;
+
+        const price=document.createElement("p");
+        price.innerText=data[i].price
+
+        const size=document.createElement("p");
+        size.innerText=data[i].size
+
+        const btn=document.createElement("button");
+        btn.innerText="Add to Cart";
+
+        btn.addEventListener("click", function (){
+            if(checkin(Product)){
+                alert("Product Already in Cart");
+            }
+            
+            else{
+                LSall.push(data[i]);
+                // console.log(data)
+                localStorage.setItem("item",JSON.stringify(LSall));
+                alert("Product Added TO Cart");
+            }
+        });
+
+
+        pro.append(image,name,price,btn);
+        container.append(pro);
+    }
+}
+         function checkin(data){
+        for(let i=0;i<LSall.length;i++){
+            if(data.id===LSall[i].id){
+                return true;
+            }
+        }
+        return false;
+      }
+
+    // let filterby = document.getElementById("filter");
+    // filterby.addEventListener("change", function () {
+    //   if (filterby.value == "") {
+    //     displayData(Product);
+    //   } else {
+    //     let filteredData = Product.filter(function (ele) {
+    //       return ele.name == filterby.value;
+    //     });
+    //     displayData(filteredData);
+    //   }
+    // });
+
+    // let container = document.getElementById("product-container");
+    // let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+    // function displayData(data) {
+    //   container.innerHTML = "";
+    //   data.forEach(function (product) {
+    //     const pro = document.createElement("div");
+        
+    //     const image=document.createElement("img");
+    //     image.setAttribute("src",data[i].img);
+
+        
+
+    //     const name =document.createElement("p");
+    //     name.innerText=data[i].name;
+
+    //     const price=document.createElement("p");
+    //     price.innerText=data[i].price
+
+    //     const size=document.createElement("p");
+    //     size.innerText=data[i].size
+
+    //     const btn=document.createElement("button");
+    //     btn.innerText="Add to Cart";
+
+    //     btn.addEventListener("click", function () {
+    //       if (checkAvalible(product)) {
+    //         alert("Product Already in Cart");
+    //       } else {
+    //         cartData.push(data);
+
+    //         localStorage.setItem("cart", JSON.stringify(cartData));
+    //         alert("Product Added To Cart");
+    //       }
+    //     });
+
+    //     pro.append(image,name,price,btn);
+    //     container.append(pro);
+    //   });
+    // }
+
+    // function checkAvalible(product) {
+    //   for (let i = 0; i < cartData.length; i++) {
+    //     if (product.id === cartData[i].id) {
+    //       return true;
+    //     }
+    //   }
+    //   return false;
+    // }
+
+
+
+
+    // let filterby = document.getElementById("filter");
+    // filterby.addEventListener("change", function () {
+    //   if (filterby.value == "") {
+    //     displayData(Product);
+    //   } else {
+    //     let filteredData = data.filter(function (product) {
+    //       return product.name == filterby.value;
+    //     });
+    //     displayData(filteredData);
+    //   }
+    // });
+
+    // let container = document.getElementById("container");
+    // let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+    // function displayData(Product) {
+    //   container.innerHTML = "";
+    //   data.forEach(function (data) {
+    //     let card = document.createElement("div");      
+    //     let img = document.createElement("img");
+    //     let name = document.createElement("h2");
+    //     let price = document.createElement("h3");
+    //     let addTocart = document.createElement("button");
+    //     img.src = data.img;
+    //     name.innerText = data.brand;
+    //     price.innerText = `₹${data.price}`;
+    //     addTocart.innerText = "Add To Cart";
+
+    //     addTocart.addEventListener("click", function () {
+    //       if (checkAvalible(product)) {
+    //         alert("Product Already in Cart");
+    //       } else {
+    //         cartData.push({ ...product});
+
+    //         localStorage.setItem("cart", JSON.stringify(cartData));
+    //         alert("Product Added To Cart");
+    //       }
+    //     });
+
+    //     card.append(img, name, price,addTocart);
+    //     container.append(card);
+    //   });
+    // }
+
+    // function checkAvalible(product) {
+    //   for (let i = 0; i < cartData.length; i++) {
+    //     if (product.id === cartData[i].id) {
+    //       return true;
+    //     }
+    //   }
+    //   return false;
+    // }
+                    
+ </script>
+</html>
